@@ -1,4 +1,4 @@
-Title : Shows the main purpose of the page - My portfolio 
+Title : Shows the main purpose of the page - My portfolio <br>
 The Header : includes my page name as well as the naigation section.
 Navigation secion : includes easy navigation to different sections of the page which shows information about myself and my work.
 About me section : has a short introduction about myself as well as an embedded image of myself and an alt-description of the image for annyone who isn't able to load it or for screenreaders.
