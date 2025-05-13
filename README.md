@@ -9,7 +9,7 @@ Footer : includes secondary navigation links to different sections as well as my
 I chose a hybrid portfolio to showcase some personal projects I've worked on along with the professional tasks I have and hope to cwork on in the future.<br>
 I chose to add an image of myself because it adds a personal feel to the site which makes people feel more familiar with the content and work.<br>
 
-CSS :
+CSS : <br>
 Overall design : <br>
   I chose a minimalistic , modern design because it portrays my design style. <br>
   It gives a clean and organised feeling which is how I like my projects to be.<br>
