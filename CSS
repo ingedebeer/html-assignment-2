@@ -1,0 +1,99 @@
+/* Color Variables */
+:root {
+    --light-grey: #f5f5f5;
+    --lilac-purple: #e6e6fa;
+    --navy-blue: #000080;
+}
+
+/* Base Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Avenir', sans-serif;
+    color: var(--navy-blue);
+    margin: 2rem 0 1rem;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--light-grey);
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--navy-blue);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--lilac-purple);
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: var(--navy-blue);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--lilac-purple);
+}
+
+/* Buttons */
+button {
+    background-color: var(--navy-blue);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--lilac-purple);
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Cards/Sections */
+.card {
+    background-color: var(--light-grey);
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+}
+
+/* Spacing Utilities */
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+.p-1 { padding: 1rem; }
+.p-2 { padding: 2rem; }
