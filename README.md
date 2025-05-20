@@ -21,3 +21,17 @@ I chose to add an image of myself because it adds a personal feel to the site wh
   All the colours I used are calming while still creating a large enough contrast for accessibility. <br>
 * Layout : 
   The navigation bar was centered and changed into a horizontal list to make it easily locatable. <br>
+  
+## Advanced CSS : <br>  
+* Challenges / Ideas : <br>
+  Nearly every part of this section challenged me :(. <br>
+  I found it difficult to optimise the structure for mobile-first and it took me quite a few tries to do. <br>
+* Decisions - Naviagtion , Structure : <br>
+  With the minimalistic effect in mind I kept a lot of white space. <br>
+  The buttons that change colour add a fine touch of interactivity. <br>
+  Toggled navigation is easier to use on smaller screens so I added it for efficiency. <br>
+* Mobile-first / Responsiveness : <br>
+  The trasition times are fast on elements. <br>
+  I used fast-loading media and clean code to help the site load efficiently on mobile. <br>
+  Transitions add to the feel of the sight. <br>
+  
