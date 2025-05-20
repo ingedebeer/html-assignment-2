@@ -9,8 +9,8 @@
 body {
     font-family: 'Lato', sans-serif;
     line-height: 1.6;
-    margin: 40;
-    padding: 10;
+    margin: 40px;
+    padding: 10px;
     background-color: white;
     color: #333;
 }
@@ -31,7 +31,7 @@ nav {
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 5;
+    padding: 5px;
     display: flex;
     justify-content: center;
     gap: 2rem;
