@@ -1,65 +1,79 @@
 <!DOCTYPE html>
-<html lang=en>
-  <head>
-    <title>Inge de Beer - Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-  </head>
- <body>
+<html lang="en">
+<head>
+  <!-- This meta tag sets the layout for mobile responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inge's Portfolio</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- This is the header section containing the navigation bar -->
   <header>
-    <h1>Inge de Beer</h1>
-    <p>| Front-end Web Developer | Designer |</p>
-    <hr>
-        <!-- This is the navigation bar -->
     <nav>
-      <ul>
+      <!-- Menu toggle button for small screens -->
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <!-- Navigation links for each section -->
+      <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#projects">My Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <script>
+      // This script toggles the visibility of the navigation menu on small screens
+      function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('show');
+      }
+    </script>
   </header>
-  <!-- This is the About section that includes an image of myself-->
-   <main>
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-      Hi! I'm Inge. I love to bring ideas to life on the web with my unique outlook and styles.
-    </p>
-  <img src="Inge.JPG" alt="This is me!" style="float:right;width:42px;height:42px;">
-  </section>
-   <!-- This is the Projects section-->
-  <section id="projects">
-    <h2>My Projects</h2>
-    <div class="project">
-      <h3>Wix Site</h3>
-      <p>This is a website designed to show my experiences in different fields I experimented working in during high school.</p>
-      <a href="#">View Project</a>
-    </div>
-    <div class="project">
-      <h3>Natural Health Solutions</h3>
-      <p>In this site you will see how I expanded my horizons by creating a ADHD-friendly website that works with them to help manage their adversities.</p>
-      <a href="#">View Project</a>
-    </div>
-  </section>
-   </main>
-   <!-- This is the Contact Section of the page -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:ingedebeertab@gmail.com">ingedebeertab@gmail.com</a></p>
-    <p>Phone: <a href="tel:+27748995649">+27 74 899 5649</a></p>
-  </section>
- <!-- This is the Footer of the page with additional navigational features -->
+
+  <!-- This is the main content container -->
+  <main class="container">
+
+    <!-- This is the About section that includes an image of myself -->
+    <section id="about" class="card">
+      <h2>About Me</h2>
+      <p>Hi! I'm Inge. I love to bring ideas to life on the web with my unique outlook and styles.</p>
+      <img src="Inge.JPG" alt="This is me!" style="float:right;width:42px;height:42px;">
+    </section>
+
+    <!-- This section highlights my web projects -->
+    <section id="projects" class="card">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        <div class="card project">
+          <h3>Wix Site</h3>
+          <p>This is a website designed to show my experiences in different fields I experimented working in during high school.</p>
+          <a href="#">View Project</a>
+        </div>
+        <div class="card project">
+          <h3>Natural Health Solutions</h3>
+          <p>In this site you will see how I expanded my horizons by creating an ADHD-friendly website that works with them to help manage their adversities.</p>
+          <button onclick="#">View Project</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- This section provides contact information -->
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:ingedebeertab@gmail.com">ingedebeertab@gmail.com</a></p>
+      <p>Phone: <a href="tel:‪+27748995649‬">‪+27 74 899 5649‬</a></p>
+    </section>
+  </main>
+
+  <!-- This is the footer that repeats the navigation and includes your name -->
   <footer>
     <p>Inge de Beer</p>
     <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">My Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">My Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </footer>
- </body>
+</body>
 </html>
