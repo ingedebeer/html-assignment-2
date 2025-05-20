@@ -17,7 +17,7 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Avenir', sans-serif;
+    font-family: 'Verdana', sans-serif;
     color: var(--navy-blue);
     margin: 2rem 0 1rem;
 }
