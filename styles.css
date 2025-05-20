@@ -1,101 +1,119 @@
-/* Color Variables */
+/* Define custom color variables */
 :root {
-    --light-grey: #d7d5d5;
-    --lilac-purple: #b5b5ff;
-    --navy-blue: #212181;
+  --navy-blue: #2c3e50;
+  --lilac-purple: #8e44ad;
+  --light-grey: #ecf0f1;
 }
 
-/* Base Styles */
+/* Basic page styling */
 body {
-    font-family: 'Verdana', sans-serif;
-    line-height: 1.6;
-    margin: 40px;
-    padding: 10px;
-    background-color: white;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: #333;
 }
 
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Trirong', sans-serif;
-    color: var(--navy-blue);
-    margin: 2rem 0 1rem;
-}
-
-/* Navigation */
+/* Navigation bar styles */
 nav {
-    position: sticky;
-    top: 0;
+  background-color: var(--navy-blue);
+  padding: 1rem;
+}
+
+/* Navigation list layout for large screens */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+/* Navigation links */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for nav links */
+nav ul li a:hover {
+  color: var(--lilac-purple);
+}
+
+/* Mobile menu button */
+.menu-toggle {
+  display: none;
+  background-color: var(--navy-blue);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+/* Responsive nav for smaller screens */
+@media (max-width: 768px) {
+  nav ul.nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--light-grey);
     padding: 1rem 0;
-}
+  }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 5px;
+  nav ul.nav-links.show {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
 
-nav a {
-    text-decoration: none;
-    color: var(--navy-blue);
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: var(--lilac-purple);
-}
-
-/* Links */
-a {
-    text-decoration: none;
-    color: var(--navy-blue);
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: var(--lilac-purple);
-}
-
-/* Buttons */
-button {
-    background-color: var(--navy-blue);
-    color: white;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: 'Verdana', sans-serif;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: var(--lilac-purple);
-}
-
-/* Container */
+/* Main content container */
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-/* Cards/Sections */
+/* Card layout for sections */
 .card {
-    background-color: var(--light-grey);
-    padding: 2rem;
-    margin: 2rem 0;
-    border-radius: 8px;
+  background-color: var(--light-grey);
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 8px;
 }
 
-/* Spacing Utilities */
-.mt-1 { margin-top: 1rem; }
-.mt-2 { margin-top: 2rem; }
-.mb-1 { margin-bottom: 1rem; }
-.mb-2 { margin-bottom: 2rem; }
-.p-1 { padding: 1rem; }
-.p-2 { padding: 2rem; }
+/* Project grid for projects section */
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Custom bullets for nav items */
+nav ul li::before {
+  content: "› ";
+  color: var(--lilac-purple);
+  font-weight: bold;
+}
+
+/* Animation for project cards */
+.project {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
