@@ -19,6 +19,7 @@ I chose to add an image of myself because it adds a personal feel to the site wh
   The fonts are both sans-serif for easy readability and it contributes to the clean aesthetic.<br>
 * Colours : <br>
   All the colours I used are calming while still creating a large enough contrast for accessibility. <br>
+  (Final colours have not been decided yet)
 * Layout : 
   The navigation bar was centered and changed into a horizontal list to make it easily locatable. <br>
   
